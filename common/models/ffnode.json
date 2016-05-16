@@ -1,0 +1,44 @@
+{
+  "name": "ffnode",
+  "plural": "ffnodes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+
+      "lastcontact": {
+        "type": "date",
+        "required": false
+      },
+      
+      "firstcontact":{
+        "type": "date",
+        "required": false
+      }
+
+    },
+    "position": {
+      "type": "geopoint",
+      "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
